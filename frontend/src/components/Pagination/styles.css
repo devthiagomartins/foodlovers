@@ -1,0 +1,54 @@
+.foodlovers-pagination-container {
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foodlovers-pagination-box {
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.foodlovers-pagination-box form {
+  width: 100%;
+  display: flex;
+}
+
+.foodlovers-pagination-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dc3545;
+  cursor: pointer;
+}
+
+.foodlovers-pagination-button svg {
+  filter: invert(51%) sepia(37%) saturate(7499%) hue-rotate(327deg) brightness(82%) contrast(112%);
+}
+
+.foodlovers-pagination-button:disabled {
+  border: 1px solid #c2c2c2;
+  cursor: unset;
+}
+
+.foodlovers-pagination-button:disabled svg {
+  filter: none;
+}
+
+.foodlovers-pagination-container p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.foodlovers-flip-horizontal {
+  transform: rotate(180deg);
+  
+}
