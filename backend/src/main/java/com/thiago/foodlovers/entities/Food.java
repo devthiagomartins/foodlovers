@@ -1,9 +1,13 @@
 package com.thiago.foodlovers.entities;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -18,6 +22,9 @@ public class Food {
 	private Double score;
 	private Integer count;
 	private String image;
+	
+	@OneToMany(mappedBy = "id.food")
+	private Set<Score> scores = new HashSet<>();
 	
 	
 	public Food() {
@@ -81,6 +88,11 @@ public class Food {
 
 	public void setImage(String image) {
 		this.image = image;
+	}
+
+
+	public Set<Score> getScores() {
+		return scores;
 	}
 	
 	
