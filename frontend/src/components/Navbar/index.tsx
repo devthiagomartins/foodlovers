@@ -1,5 +1,4 @@
 import {ReactComponent as GithubIcon} from 'assets/img/github.svg';
-import {ReactComponent as HeartIcon} from 'assets/img/heart.svg'
 import './styles.css'
 
 function Navbar(){
@@ -9,7 +8,7 @@ function Navbar(){
       <header>
       <nav className="container">
         <div className="foodlovers-nav-content">
-          <h1>Pizza<HeartIcon className="heartIcon"/>Lovers</h1>
+          <h1><span id="spanPizza">Pizza</span>❤Lovers</h1>
           <a href="http://github.com/devthiagomartins">
             <div className="foodlovers-contact-container">
               <GithubIcon />
