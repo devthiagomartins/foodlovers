@@ -8,7 +8,7 @@ function Navbar(){
       <header>
       <nav className="container">
         <div className="foodlovers-nav-content">
-          <h1><span id="spanPizza">Pizza</span>❤Lovers</h1>
+          <h1><span id="spanPizza">Pizza</span>🍕Lovers</h1>
           <a href="http://github.com/devthiagomartins">
             <div className="foodlovers-contact-container">
               <GithubIcon />
