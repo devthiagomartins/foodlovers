@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;700&display=swap');
+
 .foodlovers-form-container {
   max-width: 480px;
   margin: 40px auto;
@@ -34,6 +36,7 @@
   align-items: center;
   padding: 10px 10px 20px 10px;
   border-radius: 0 0 8px 8px;
+  font-weight: bold;
 }
 
 .foodlovers-card-bottom-container h3 {
@@ -46,7 +49,7 @@
 }
 
 .foodlovers-btn {
-  background-color: #dc3545;
+
   font-size: 14px;
   font-weight: 700;
   height: 40px;
@@ -55,18 +58,12 @@
   align-items: center;
   justify-content: center;
 }
-.foodlovers-btn-save{
-  background-color: var(--color-primary);
-  color: #fff;
-  font-size: 14px;
-  font-weight: 700;
-  height: 40px;
-  width: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .IconsDimension {
   width: 13px;
   height: 13px;
+}
+
+#score{
+  cursor: pointer;
 }

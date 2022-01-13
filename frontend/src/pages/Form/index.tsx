@@ -2,11 +2,14 @@ import './styles.css';
 import {ReactComponent as SaveIcon} from 'assets/img/save.svg';
 import {ReactComponent as CancelIcon} from 'assets/img/cancel.svg';
 
+import { Link } from 'react-router-dom';
+
+
 function Form() {
 
   const food = {
     id: 1,
-    image: "https://t1.rg.ltmcdn.com/pt/images/9/8/3/img_pizza_calabresa_e_mussarela_4389_orig.jpg",
+    image: "https://img.itdg.com.br/tdg/images/blog/uploads/2019/05/pizza.jpg",
     title: "Pizza de Calabresa",
     count: 2,
     score: 4.5
@@ -14,7 +17,7 @@ function Form() {
 
   return (
     <div className="foodlovers-form-container">
-      <img className="foodlovers-food-card-image" src={food.image} alt={food.title}/>
+      <img className="foodlovers-food-card-image" src={food.image} alt={food.title} />
       <div className="foodlovers-card-bottom-container">
         <h3>{food.title}</h3>
         <form className="foodlovers-form">
@@ -33,10 +36,14 @@ function Form() {
             </select>
           </div>
           <div className="foodlovers-form-btn-container">
-            <button type="submit" className="btn btn-warning foodlovers-btn-save"><SaveIcon className="IconsDimension" />&nbsp;Salvar</button>
+            <button type="submit" className="btn btn-success foodlovers-btn"><SaveIcon className="IconsDimension" />&nbsp;Salvar</button>
           </div>
         </form >
+      
+        <Link to="/"> 
         <button className="btn btn-danger foodlovers-btn mt-3"><CancelIcon className="IconsDimension" />&nbsp;Cancelar</button>
+        </Link>
+
       </div >
     </div >
   );

@@ -1,13 +1,12 @@
 import FoodScore from "components/FoodScore";
 import { Link } from "react-router-dom";
-import './styles.css';
 
 function FoodCard() {
 
   const food = {
     id: 1,
-    image: "https://t1.rg.ltmcdn.com/pt/images/9/8/3/img_pizza_calabresa_e_mussarela_4389_orig.jpg",
-    title: "Pizza de Calabresa",
+    image: "https://img.itdg.com.br/tdg/images/blog/uploads/2019/05/pizza.jpg",
+    title: "Pizza de calabresa",
     count: 2,
     score: 4.5
   };
@@ -20,7 +19,7 @@ function FoodCard() {
         <h3>{food.title}</h3>
         <FoodScore />
         <Link to={`/form/${food.id}`}>
-          <div className="btn btn-warning foodlovers-btn-save">Avaliar</div>
+          <div className="btn btn-success foodlovers-btn">Avaliar</div>
         </Link>
       </div>
     </div>
